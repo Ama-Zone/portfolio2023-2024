@@ -2,28 +2,11 @@ body {
   font-family: sans-serif;
   font-size: $size-text;
   line-height: 1.5;
-  color: $c-bg;
-  //background-color: $c-bg;
-  background-image: linear-gradient(
-  0deg,
-  hsl(348deg 6% 15%) 0%,
-  hsl(348deg 5% 19%) 12%,
-  hsl(348deg 4% 23%) 16%,
-  hsl(348deg 3% 28%) 18%,
-  hsl(348deg 3% 32%) 20%,
-  hsl(348deg 2% 37%) 22%,
-  hsl(348deg 2% 41%) 24%,
-  hsl(349deg 1% 46%) 26%,
-  hsl(349deg 1% 51%) 28%,
-  hsl(349deg 1% 56%) 31%,
-  hsl(349deg 1% 61%) 34%,
-  hsl(349deg 1% 66%) 37%,
-  hsl(349deg 1% 71%) 42%,
-  hsl(349deg 1% 76%) 47%,
-  hsl(349deg 1% 81%) 55%,
-  hsl(349deg 1% 87%) 66%,
-  hsl(0deg 0% 92%) 99%
-);
+  color: $c-text;
+  background-color: $c-bg;
+  margin: 0;
+  padding: 0;
+ 
 }
 
 

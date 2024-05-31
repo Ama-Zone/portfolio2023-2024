@@ -1,0 +1,20 @@
+
+
+.livre{
+    list-style-type: none;
+    display: flex;
+    &__clic img{
+        height: 200px;
+        margin-top: -25px;
+    }
+    &__clic--voiture img{
+        transform: rotate(-11.25deg);
+        margin-left: 19.5px;
+    }
+    &__clic--arbre img{
+        transform: rotate(11.25deg);
+        margin-right: 19.5px;
+    }
+}
+
+
