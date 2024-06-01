@@ -1,11 +1,68 @@
 
+header div{
+    background-image: url('/assets/images/svgopti/button.svg');
+    background-repeat: no-repeat;
+    height:102px;
+    width: 186px;
+    text-align: center;
+}
+.fond{
+    padding-top: $h3mob;
+    max-width: 100%;
+    background-image: linear-gradient(
+  0deg,
+  hsl(348deg 6% 15%) 0%,
+  hsl(348deg 3% 26%) 11%,
+  hsl(348deg 2% 38%) 17%,
+  hsl(349deg 1% 51%) 22%,
+  hsl(349deg 1% 64%) 26%,
+  hsl(349deg 1% 78%) 30%,
+  hsl(0deg 0% 92%) 34%,
+  hsl(344deg 0% 92%) 37%,
+  hsl(344deg 0% 92%) 41%,
+  hsl(344deg 0% 92%) 45%,
+  hsl(344deg 0% 92%) 48%,
+  hsl(344deg 0% 92%) 51%,
+  hsl(0deg 0% 92%) 55%,
+  hsl(344deg 0% 92%) 58%,
+  hsl(344deg 0% 92%) 61%,
+  hsl(344deg 0% 92%) 65%,
+  hsl(344deg 0% 92%) 68%,
+  hsl(344deg 0% 92%) 71%,
+  hsl(0deg 0% 92%) 74%,
+  hsl(349deg 1% 78%) 78%,
+  hsl(349deg 1% 64%) 81%,
+  hsl(349deg 1% 51%) 85%,
+  hsl(348deg 2% 38%) 89%,
+  hsl(348deg 3% 26%) 93%,
+  hsl(348deg 6% 15%) 100%
+);
+}
+
+#livreFermer{
+    opacity: 0;
+}
+
+.text{
+    margin: 0 $txtmob ;
+    color: $c-bg;
+}
+
+.contenu__commun{
+    margin-bottom: 72px;
+}
 
 .livre{
     list-style-type: none;
     display: flex;
+    text-align: center;
+    padding-inline-start: 0;
+    justify-content: center;
+    margin-bottom: 0;
     &__clic img{
         height: 200px;
         margin-top: -25px;
+        
     }
     &__clic--voiture img{
         transform: rotate(-11.25deg);
@@ -15,6 +72,10 @@
         transform: rotate(11.25deg);
         margin-right: 19.5px;
     }
+}
+
+.illu{
+    margin-bottom: $h2mob;
 }
 
 
