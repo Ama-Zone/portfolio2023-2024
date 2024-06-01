@@ -46,6 +46,17 @@ header div{
 .text{
     margin: 0 $txtmob ;
     color: $c-bg;
+
+    a{
+        color: $c-colordx;
+        text-decoration: none;
+       
+    }
+    a:visited{
+        color: $c-colorun;
+        border-bottom: solid 1px $c-colorun;
+    }
+
 }
 
 .contenu__commun{
@@ -74,8 +85,24 @@ header div{
     }
 }
 
+.projet{
+    margin-bottom: $h1mob;
+    height: 630px;;
+}
+
 .illu{
-    margin-bottom: $h2mob;
+    position: absolute;
+    justify-self: center;
+
+    &__text{
+        margin-bottom: $h3mob;
+    }
+
+    &__hidden{
+        display: none;
+    }
+    
+    
 }
 
 
