@@ -66,22 +66,30 @@ header div{
 .livre{
     list-style-type: none;
     display: flex;
-    text-align: center;
     padding-inline-start: 0;
     justify-content: center;
     margin-bottom: 0;
-    &__clic img{
+    margin-top: -10px;
+   width: 100%;
+    &__clic{
         height: 200px;
-        margin-top: -25px;
-        
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        img{
+            height:100%;
+        }
     }
-    &__clic--voiture img{
+    &__clic--voiture{
         transform: rotate(-11.25deg);
-        margin-left: 19.5px;
+        margin-left: 19.2px;
     }
-    &__clic--arbre img{
+    &__clic--arbre{
         transform: rotate(11.25deg);
-        margin-right: 19.5px;
+        margin-right: 19.3px;
     }
 }
 
@@ -97,12 +105,17 @@ header div{
     &__text{
         margin-bottom: $h3mob;
     }
-
-    &__hidden{
-        display: none;
-    }
-    
     
 }
 
+
+.slider{
+
+    &--hidden{
+        display: none;
+        visibility: hidden;
+    }
+
+   
+}
 
