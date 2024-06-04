@@ -1,11 +1,39 @@
 
-header div{
-    background-image: url('/assets/images/svgopti/button.svg');
-    background-repeat: no-repeat;
-    height:102px;
-    width: 186px;
-    text-align: center;
+header{
+    height: 200px;
+    padding-left:$txtmob;
 }
+.retour{
+    width: 150px;
+    background-image: url('/assets/images/svgopti/baniereV6.svg');
+    background-repeat: no-repeat;
+    height:180px;
+    justify-content: center;
+    
+        
+
+    &__ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 125px;
+        align-items: center;
+        padding-inline-start: 0px;
+        padding-top: 18px;
+        margin: 0;
+    }
+
+    &__a--active{
+        border-bottom: solid 4px $c-colorun;
+        border-radius: 2px;
+    }
+    
+    
+}
+
+
+
 .fond{
     padding-top: $h3mob;
     max-width: 100%;
@@ -39,6 +67,8 @@ header div{
 );
 }
 
+
+
 #livreFermer{
     opacity: 0;
 }
@@ -46,17 +76,10 @@ header div{
 .text{
     margin: 0 $txtmob ;
     color: $c-bg;
-
-    a{
-        color: $c-colordx;
-        text-decoration: none;
-       
-    }
     a:visited{
-        color: $c-colorun;
-        border-bottom: solid 1px $c-colorun;
+        color: $c-colordx;
+        font-weight: 600;
     }
-
 }
 
 .contenu__commun{

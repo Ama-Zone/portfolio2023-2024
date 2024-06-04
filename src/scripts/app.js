@@ -22,3 +22,11 @@ console.log(gsap.version);
 		        }
             });
         }
+
+        let chauss  = document.querySelector(".livre__clic--chauss");
+        let arbre = document.querySelector(".lien__arbre");
+        let illuArbre = document.querySelector(".livre__clic--arbre");
+        let illuhidden = document.querySelector(".slider--hidden");
+
+
+       
