@@ -28,6 +28,12 @@ header{
         border-bottom: solid 4px $c-colorun;
         border-radius: 2px;
     }
+
+    &__a--hover:hover{
+        color: $c-colordx;
+        border-bottom: solid 4px $c-colordx;
+        border-radius: 2px;
+    }
     
     
 }
@@ -80,10 +86,13 @@ header{
         color: $c-colordx;
         font-weight: 600;
     }
+    &__paragraf{
+        margin-bottom: $txtmob;
+    }
 }
 
 .contenu__commun{
-    margin-bottom: 72px;
+    margin-bottom: $h1mob;
 }
 
 .livre{
@@ -92,8 +101,13 @@ header{
     padding-inline-start: 0;
     justify-content: center;
     margin-bottom: 0;
-    margin-top: -10px;
-   width: 100%;
+    width: 100%;
+    height: 200px;
+
+    &__projets{
+        margin-top: -9px;
+    }
+
     &__clic{
         height: 200px;
         background-color: transparent;
@@ -101,28 +115,53 @@ header{
         margin: 0;
         padding: 0;
         max-width: 100%;
+        display: flex;
 
         img{
             height:100%;
         }
     }
     &__clic--voiture{
-        transform: rotate(-11.25deg);
-        margin-left: 19.2px;
+        img{
+            transform: rotate(-11.25deg);
+            margin-left: 19.2px;
+        }
     }
     &__clic--arbre{
-        transform: rotate(11.25deg);
-        margin-right: 19.3px;
+        img{
+            transform: rotate(11.25deg);
+            margin-right: 19.2px;
+        }
     }
 }
 
 .projet{
-    margin-bottom: $h1mob;
-    height: 630px;;
+    margin-bottom: $h3mob;
+   
+    
+}
+
+.svg{
+    padding: 0 $txtmob;
+
+    &__fiche{ 
+        height: 270px;
+        justify-content: center;
+        display: flex;
+        
+    }
+}
+
+.img__fiche{
+    max-width: 100%;
+    position: absolute;
+    justify-self: center;
+
+
 }
 
 .illu{
-    position: absolute;
+    
     justify-self: center;
 
     &__text{
@@ -131,14 +170,241 @@ header{
     
 }
 
-
-.slider{
-
-    &--hidden{
-        display: none;
-        visibility: hidden;
+/* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+    header{
+        height: 230px;
+        padding-left:$txttab;
     }
 
-   
+    .retour{
+        width: 200px;
+        height:230px;
+        
+        &__ul{
+            height: 175px;
+            padding-top: 18px;
+        } 
+    }
+
+    .fond{
+        padding-top: $h3tab;
+    }
+
+   .contenu__commun{
+        background-color: #ebebebb0;
+        padding-top: $h2tab;
+        border-radius: 100px 100px 0 0;
+        margin-bottom: $h1tab;
+
+        p, .titre--h1{
+            margin-left: 100px;
+            margin-right: 100px;
+        } 
+    }
+
+    .projet{
+        margin-bottom: $h1tab;   
+    }
+
+    .text {
+        &__paragraf{
+            max-width: 100%;
+            margin: 0 100px 20px 100px; 
+           
+        }
+    }
+
+    .illu__text{
+        margin-bottom: $h2tab;
+    }
+
+    .img__fiche{
+        max-width: 80%;
+        justify-self: center;
+    }
+
+    .livre{
+        width: 100%;
+        height: 400px;
+    
+        &__projets{
+            margin-top: -9px;
+        }
+    
+        &__clic{
+            height: 350px;
+    
+            img{
+                height:100%;
+            }
+        }
+        &__clic--voiture{
+            img{
+                margin-left: 31px;
+            }
+        }
+        &__clic--arbre{
+            img{
+                margin-right: 31px;
+            }
+        }
+    }
 }
 
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px){
+    header{
+        height: 230px;
+        padding-left:$txtpc;
+    }
+
+    .retour{
+        width: 200px;
+        height:230px;
+        
+        &__ul{
+            height: 175px;
+            padding-top: 0;
+        } 
+    }
+
+    .fond{
+        padding-top: $h3tab;
+    }
+
+   .contenu__commun{
+        background-color: transparent;
+        padding-top: 0;
+        border-radius: 100px 100px 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        margin-bottom: 113px;
+        justify-self: center;
+        align-items: center;
+
+        .titre--h1{
+            color: $c-text;
+        } 
+
+        
+    }
+
+    .projet{
+        margin-bottom: $txtpc;
+        max-width: 80%;  
+        justify-content: center; 
+        align-items: center;
+        display: flex;
+        margin: auto;
+    }
+
+    .text {
+        &__paragraf{
+            
+            margin: 0 44px 22px 44px; 
+           
+        }
+    }
+
+    .svg{
+       width: 30%;
+        
+    }
+    
+
+    .img__fiche{
+        max-width: 35%;
+        justify-self: center;
+
+    }
+
+    
+
+    .livre{
+        width: 100%;
+        height: 400px;
+        
+    
+        &__projets{
+            margin-top: -9px;
+        }
+    
+        &__clic{
+            height: 350px;
+            z-index: -5;
+
+            &--projets:hover{
+                margin-top: -100px;
+                z-index: 10;
+            }
+            img{
+                height:100%;
+            }
+
+            &--rotatd{
+                transform: rotate(-11.25deg);
+
+            }
+            &--rotatg{  
+                    transform: rotate(11.25deg); 
+            }
+        }
+
+        &__clic--voiture{
+            img{
+                transform: rotate(0deg);
+                margin-left: 0;
+            }
+        }
+        &__clic--arbre{
+            img{
+                transform: rotate(0deg);
+                margin-right: 0;
+            }
+        }
+
+        &__svg svg{
+            height: 521px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        &__projets{
+            width: 95%;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            margin-top: -370px;
+            
+            display: grid;
+            grid-template-columns: 93px 93px 93px 4fr 93px 93px 93px;
+            gap: 0%;
+            &--fiche{
+                grid-column: 5;
+            }
+            &--piments{
+                grid-column: 6;
+            }
+            &--voiture{
+                grid-column: 7;
+            }
+        }
+    }
+    .illu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        &__text{
+            margin-bottom: $h2pc;
+            max-width: 50%;
+            margin: 0 44px 22px 44px;
+        }
+    }
+}

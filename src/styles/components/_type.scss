@@ -8,6 +8,9 @@ body {
   padding: 0;
  
 }
+.hidden{
+  display: none;
+}
 
 .titre{
   font-family: "Solway", serif;
@@ -45,6 +48,65 @@ a{
   
 }
 
+/* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
 
+@media only screen and (min-width:631px){
 
+  body {
+    font-size: $txttab;
+  }
 
+  .titre{
+    margin-bottom: $txttab;
+
+    &--color{
+      color: $c-bg;
+    }
+  
+    &--h1{
+      font-size: $h1tab;
+      margin-bottom: $h1tab;
+    }
+  
+    &--h2{
+      font-size: $h2tab;
+    }
+  
+    &--h3{
+      font-size: $h3tab;
+    }
+  
+  }
+    
+}
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px){
+  body {
+    font-size: $txtpc;
+  }
+
+  .titre{
+    margin-bottom: $txtpc;
+
+    &--color{
+      color: $c-bg;
+    }
+  
+    &--h1{
+      font-size: $h1pc;
+      margin-bottom: 113px;
+    }
+  
+    &--h2{
+      font-size: $h2pc;
+    }
+  
+    &--h3{
+      font-size: $h3pc;
+    }
+  
+  }
+  
+
+}

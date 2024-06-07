@@ -1,7 +1,266 @@
-.ropsProjets{
+.ropsProjets, .HEAJProjets{
     background-image: url('/assets/images/svgopti/plancheV4.svg');
     background-repeat: no-repeat;
     height: 700px;
-   width: 100%;
+    min-width: 100%;
     
+}
+
+
+
+.titre__index{
+    background-image: url('/assets/images/svgopti/plaque.svg');
+    background-repeat: no-repeat;
+    color: $c-bg;
+    margin: 0;
+    font-size: 22px;
+
+    
+    
+    
+
+    &--HEAJ{
+        top: 19%;
+        left: 19%;
+        width: 200px;
+        padding: 5px;
+    }
+
+    &--Rops{
+        top: 18%;
+        right: 16%;
+        width: 400px;
+        padding: 15px;
+    }
+
+}
+
+
+.livre__index{
+    margin-top: 45px;
+
+    &--voiture{
+        img{
+            transform: rotate(-11.25deg);
+            margin-left: 19.2px;
+        }
+    }
+    &--arbre{
+        img{
+            transform: rotate(11.25deg);
+            margin-right: 19.2px;
+        }
+    }
+}
+
+/* TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE */
+@media only screen and (min-width:631px){
+    
+}
+
+
+
+/* DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS DESKTOPS */
+@media only screen and (min-width:1000px){
+
+    .index{
+        background-image: url('/assets/images/svgopti/bibliPcV3.svg');
+        background-repeat: no-repeat;
+        position: absolute; 
+        height: 800px;
+        top: -5%; 
+        left: 0; 
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -10;
+        
+    }
+
+    .ropsProjets, .HEAJProjets{
+        background-image: none;  
+    }
+
+    .livre__index{
+        position: absolute;
+        height: 140px;
+
+        &--arbre{
+            top:43%;
+            right:29.6% ;
+            transform: none;
+        }
+        &--chat{
+            top:24%;
+            right:35.3%;
+        }
+        &--chauss{
+            top:24%;
+            right:26%;
+            transform: rotate(-11.25deg);
+        }
+        &--fiche{
+            top:43%;
+            right:12.3%;
+            transform: rotate(-11.25deg);
+        }
+        &--piments{
+
+            top:24%;
+            right:33%;
+        }
+        &--voiture{
+            top:43%;
+            right:33.6%;
+            transform: rotate(0deg);
+        }
+        &--hello{
+            top:24%;
+            left:33.6%;
+        }
+
+        
+    }
+
+
+}
+
+@media only screen and (min-width:1680px){
+
+    .index{
+        background-image: url('/assets/images/svgopti/bibliPcV3.svg');
+        background-repeat: no-repeat;
+        position: absolute; 
+        height: 800px;
+        top: -5%; 
+        left: 0; 
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -10;
+        
+    }
+
+    .ropsProjets, .HEAJProjets{
+        background-image: none;  
+    }
+
+    .titre__index--HEAJ{
+        position: absolute;
+        top: 20%;
+        left: 19%;
+        width: 200px;
+        padding: 5px;
+    }
+
+    .titre__index--Rops{
+        position: absolute;
+        top: 19%;
+        right: 19%;
+        width: 250px;
+        padding: 11px;
+    }
+
+    .livre__index{
+
+        height: 140px;
+
+        &--arbre{
+            top:41.3%;
+            right:29.6% ;
+        }
+        &--chat{
+            top:24%;
+            right:35.3%;
+        }
+        &--chauss{
+            top:24%;
+            right:26%;
+        }
+        &--fiche{
+            top:41.3%;
+            right:12.3%;
+        }
+        &--piments{
+
+            top:24%;
+            right:33%;
+        }
+        &--voiture{
+            top:41.3%;
+            right:33.6%;
+        }
+        &--hello{
+            top:24%;
+            left:29%;
+        }
+        &--iolce{
+            top:24%;
+            left:26.9%;
+        }
+
+        &--dataplay{
+            top:41.3%;
+            left:22.9%;
+        }
+        &--rux{
+            top:41.3%;
+            left:33.9%;
+        }
+
+        
+    }
+}
+
+@media only screen and (min-width:1920px){
+
+    .titre__index--HEAJ{
+        top: 19%;
+        left: 19%;
+        width: 200px;
+        padding: 5px;
+    }
+
+    .titre__index--Rops{
+        top: 19%;
+        right: 19%;
+        width: 250px;
+        padding: 11px;
+    }
+
+    .livre__index{
+        z-index: 5;
+        height: 160px;
+        &:hover{
+            height: 180px;
+            z-index: 10;
+        }
+
+        &--arbre{
+            top:41.1%;
+            right:29.7% ;
+        }
+        &--chat{
+            top:24%;
+            right:35.3%;
+        }
+        &--chauss{
+            top:24%;
+            right:26%;
+        }
+        &--fiche{
+            top:41.1%;
+            right:12.3%;
+        }
+        &--piments{
+
+            top:24%;
+            right:33%;
+        }
+        &--voiture{
+            top:41.1%;
+            right:33.7%;
+        }
+
+
+        
+    }
 }
